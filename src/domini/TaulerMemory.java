@@ -4,17 +4,17 @@ import java.util.Random;
 
 public class TaulerMemory {
 
-	// Delaració de constants	
-	public static final int MIDA = 4;// númro de files i columnes de la matriu quadrada	
+	// DelaraciÃ³ de constants	
+	public static final int MIDA = 4;// nÃºmro de files i columnes de la matriu quadrada	
 	private static final int quantsElements = 26;// mida dels elements
 	public static final char celdaBuida = '*';// El text que fareu servir com a nul
-	// Delaració dels atributs
+	// DelaraciÃ³ dels atributs
 	private Casella[][] tauler;// Matriu per emmagatzemar les 8 parelles de lletres
 	private char[] lletres;// Vector per emmagatzemar les lletres de la A a la Z
 	 
 
 	// Constructor
-	/* Cal inicialitzar els atributs degudament  i a continuació cridar al mètode omplirTauler()*/
+	/* Cal inicialitzar els atributs degudament  i a continuaciÃ³ cridar al mÃ¨tode omplirTauler()*/
 	public TaulerMemory() {
 		inicialitzarVectorElememtsParelles() ;
 		inicialitzarTauler();
@@ -24,7 +24,7 @@ public class TaulerMemory {
 		return MIDA;
 	}
 	/*
-	 * Retorna una còpia de la matriu tauler no retorna la matriu teuler
+	 * Retorna una cÃ²pia de la matriu tauler no retorna la matriu teuler
 	 */
 	public String[][] getTauler() {
 		String[][] CopiaTauler = new String[MIDA][MIDA];
@@ -39,10 +39,10 @@ public class TaulerMemory {
 	}
 	
 	/*
-	 * Cal emplenar el vector lletres amb els caràcters de l''A' a la 'Z' en total seran
+	 * Cal emplenar el vector lletres amb els carÃ cters de l''A' a la 'Z' en total seran
 	 * 26 lletres amb els codis enters del 65 al 90 per exemple el int 65 el podem
-	 * convertir al caràcter 'A' fent char c = (char) 65;
-	 * Aquest mètode és cridat pel constructor.
+	 * convertir al carÃ cter 'A' fent char c = (char) 65;
+	 * Aquest mÃ¨tode Ã©s cridat pel constructor.
 	 */
 	private void inicialitzarVectorElememtsParelles()  {
 		lletres = new char[quantsElements];
@@ -90,7 +90,7 @@ public class TaulerMemory {
 
 
 	/*
-	 *Col·locar el caràcter de l’argument a la matriu tauler en una casella triada aleatòriament
+	 *ColÂ·locar el carÃ cter de lâ€™argument a la matriu tauler en una casella triada aleatÃ²riament
 	 * i que tingui el valor nul.
 	 */
 	private void collocarLletra(char[][] unTauler, char lletra) {
@@ -124,7 +124,7 @@ public class TaulerMemory {
 		else
 		{
 			c1.setAcertada();
-			c1.setAcertada();
+			c2.setAcertada();
 		}
 		
 	}
